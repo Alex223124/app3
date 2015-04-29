@@ -9,11 +9,13 @@ gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'pg', '~> 0.18.1'
+gem 'rails_12factor', '0.0.3'
 
 
 group :development, :test do
   gem 'sqlite3', '1.3.10'
   gem 'rspec-rails', '~> 3.0'
+  gem 'capybara', '2.4.0'
   gem 'guard-rspec', '~> 4.5.0'
   #gem 'rspec-rails', '2.13.1'
   # The following optional lines are part of the advanced setup.
@@ -25,7 +27,6 @@ end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
   gem 'factory_girl_rails', '4.2.0'
   gem 'cucumber-rails', '1.4.0', :require => false
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
@@ -54,5 +55,5 @@ group :doc do
 end
 
 group :production do
-  gem 'rails_12factor', '0.0.2'
+  #gem 'rails_12factor', '0.0.2'
 end
