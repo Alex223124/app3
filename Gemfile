@@ -23,7 +23,7 @@ gem 'sprockets', '~> 3.0.1'
   gem 'spork-rails', '~> 4.0.0'
   # gem 'guard-spork', '1.5.0'
   # gem 'childprocess', '0.3.6'
-end
+#end
 
 #group :test do
   gem 'selenium-webdriver', '2.35.1'
@@ -41,7 +41,7 @@ end
 #gem 'rb-notifu', '0.0.4'
 #gem 'win32console'
 #gem 'wdm', '~> 0.1.0'
-end
+#end
 
 gem 'sass-rails', '5.0.3'
 gem 'uglifier', '2.1.1'
