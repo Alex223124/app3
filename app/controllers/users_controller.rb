@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   	else
   		render 'new'
   end
-
+  
 
   def new
     @user = User.new 

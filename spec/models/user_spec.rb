@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe User do
 
@@ -10,11 +10,18 @@ describe User do
   subject { @user }
   
   
-  
+  it { should respond_to(:password_confirmation) }
+  it { should respond_to(:remember_token) }
   it { should respond_to(:authenticate) }
   
   
-  
+  describe "remember token" do
+    before { @user.save }
+    it { expect(@user.remember_roken).not_to be_blank }
+  #(:remember_token) { should_not be_blank}
+  end
+end
+
   describe "with a password that's too short" do
     before { @user.password = @user.password_confirmation = "a" * 5 }
     it { should be_invalid }
@@ -35,6 +42,6 @@ describe User do
       specify { expect(user_for_invalid_password).to be_false }
     end
   end
-end
+
 
 
