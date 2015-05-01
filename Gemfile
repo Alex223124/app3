@@ -10,9 +10,9 @@ gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'pg', '~> 0.18.1'
 gem 'rails_12factor', '0.0.3'
+gem 'sprockets', '~> 3.0.1'
 
-
-group :development, :test do
+#group :development, :test do
   gem 'sqlite3', '1.3.10'
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara', '2.4.0'
@@ -25,7 +25,7 @@ group :development, :test do
   # gem 'childprocess', '0.3.6'
 end
 
-group :test do
+#group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'factory_girl_rails', '4.2.0'
   gem 'cucumber-rails', '1.4.0', :require => false
