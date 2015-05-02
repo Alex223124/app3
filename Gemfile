@@ -10,6 +10,7 @@ gem 'bootstrap-will_paginate', '0.0.9'
 gem 'pg', '~> 0.18.1'
 gem 'rails_12factor', '0.0.3'
 gem 'sprockets', '~> 3.0.1'
+gem 'sprockets-rails', '~> 2.2.4'
 gem 'faker', '~> 1.4.3'
 
 group :development, :test do
