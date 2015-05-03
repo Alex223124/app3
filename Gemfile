@@ -13,6 +13,7 @@ gem 'sprockets', '~> 3.0.1'
 gem 'sprockets-rails', '~> 2.2.4'
 gem 'faker', '~> 1.4.3'
 gem 'rake', '~> 10.4.2'
+gem 'heroku', '~> 3.32.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.10'
