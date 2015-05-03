@@ -12,11 +12,13 @@ gem 'rails_12factor', '0.0.3'
 gem 'sprockets', '~> 3.0.1'
 gem 'sprockets-rails', '~> 2.2.4'
 gem 'faker', '~> 1.4.3'
+gem 'rake', '~> 10.4.2'
 
 group :development, :test do
   gem 'sqlite3', '1.3.10'
   gem 'rspec-rails', '~> 3.0'
-  gem 'capybara', '2.4.0'
+  #gem 'capybara', '2.4.0'
+  gem 'capybara', '~> 2.4.4'
   gem 'guard-rspec', '~> 4.5.0'
   #gem 'rspec-rails', '2.13.1'
   # The following optional lines are part of the advanced setup.
